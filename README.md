@@ -1,3 +1,9 @@
+# Demo
+https://youtu.be/Y_cB25vFWu8
+
+# Frontend
+https://github.com/oismaelash/loggi-next-ts-frontend
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
