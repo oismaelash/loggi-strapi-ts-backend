@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "routes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::route.route",
+      "mappedBy": "clients"
+    },
+    "address": {
+      "type": "json",
+      "default": {
+        "cep": "",
+        "city": "",
+        "state": "",
+        "number": "",
+        "street": "",
+        "latitude": 0,
+        "longitude": 0,
+        "complement": "",
+        "neighborhood": ""
+      }
+    }
+  }
+}
